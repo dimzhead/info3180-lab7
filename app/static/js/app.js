@@ -1,3 +1,6 @@
+// import VueFormComponents from 'vue-form-components'
+
+
 /* Add your Application JavaScript */
 Vue.component('app-header', {
     template: `
@@ -32,7 +35,17 @@ const Home = Vue.component('home', {
    template: `
     <div class="jumbotron">
         <h1>Lab 7</h1>
-        <p class="lead">In this lab we will demonstrate VueJS working with Forms and Form Validation from Flask-WTF.</p>
+        <form>
+        <div class="form-group">
+        <label for="exampleFormControlTextarea1">Description</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+      <label for="file">Photo</label>
+      <input type="file" class="form-control-file" id="file">
+    </div>
+      </div>
+      </form>
     </div>
    `,
     data: function() {
